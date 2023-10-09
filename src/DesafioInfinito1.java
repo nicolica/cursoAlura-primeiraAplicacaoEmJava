@@ -1,4 +1,7 @@
 
+    //Alice estava praticando seus conhecimentos sobre a estrutura de repetição while e teve a ideia de fazer um programa que apresentasse os números de 1 a 10.
+   // Assim, ela escreveu o seguinte trecho de código:
+
 // USANDO O FOR
 public class DesafioInfinito1 {
 
@@ -7,7 +10,6 @@ public class DesafioInfinito1 {
         for (int contador = 1; contador <= 10; contador++) {
             System.out.println(contador);
         }
-
     }
 }
 

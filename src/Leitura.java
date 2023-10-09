@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Leitura {
     public static void main(String[] args) {
+
         Scanner leitura = new Scanner(System.in); // variavel para receber um input
 
         System.out.println("Qual seu filme favorito?");
@@ -16,6 +17,5 @@ public class Leitura {
         System.out.println(filme);
         System.out.println(anoDeLancamento);
         System.out.println(nota);
-
     }
 }

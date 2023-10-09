@@ -1,16 +1,18 @@
+  //Crie um programa que simula um jogo de adivinhação, que deve gerar um número aleatório entre 0 e 100 e pedir para que o usuário tente adivinhar o número,
+ // em até 5 tentativas. A cada tentativa, o programa deve informar se o número digitado pelo usuário é maior ou menor do que o número gerado.
+
 import java.util.Random;
 import java.util.Scanner;
 
-public class JoogoDeAdivinhacao {
-
+public class JogoDeAdivinhacao {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int numeroAleatorio = new Random().nextInt(100);
+        int numeroAleatorio = new Random().nextInt(50);
         int tentativas = 0;
         String mensagemInicial = """
                 Bora jogar o jodo da adivinhação?
-                Tente advinhar o número de escolhemos de 0 a 100 em até 5 tentativa.
+                Tente advinhar o número de escolhemos de 0 a 50 em até 5 tentativa.
                 
                 Vamos começar, digite um número:
                 """;
@@ -23,7 +25,7 @@ public class JoogoDeAdivinhacao {
             tentativas++;
 
             if (numeroDoJogador == numeroAleatorio) {
-                System.out.println("Parabéns, você acertou o número em "+ tentativas + "tentativas!");
+                System.out.println("Parabéns, você acertou o número!");
                 break;
             }
 
@@ -39,17 +41,6 @@ public class JoogoDeAdivinhacao {
             if (numeroDoJogador > numeroAleatorio){
                 System.out.println("O número digitado é menor que o número gerado.");
             }
-
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

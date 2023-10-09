@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class OutroLoop {
-
     public static void main(String[] args) {
 
         Scanner leitura = new Scanner(System.in);
@@ -18,11 +17,8 @@ public class OutroLoop {
                 mediaAvaliacao += nota;
                 totalDeNotas++; // ++ significa somar a variavel mais 1, poderia usar também (+= 1;)
             }
-
         }
 
         System.out.println("Média de avaliações: " + mediaAvaliacao/totalDeNotas);
-
     }
-
 }

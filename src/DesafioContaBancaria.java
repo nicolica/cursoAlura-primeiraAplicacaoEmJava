@@ -8,15 +8,17 @@ public class DesafioContaBancaria {
         String tipoConta = "Corrente";
         double saldo = 5000.00;
         int opcao = 0;
+        String mensagem = """
+                ******************************************
+                Dados iniciais do cliente
+                
+                Nome:                %s
+                Tipo da Conta:       %s
+                Saldo inicial:       %.2f
+                ******************************************
+                """.formatted(nome, tipoConta, saldo); // método formatted do Text Blocks
 
-
-        System.out.println("*******************************************");
-        System.out.println("Dados iniciais do cliente:");
-        System.out.println("Nome: " + nome);
-        System.out.println("Tipo da Conta: " + tipoConta);
-        System.out.println("Saldo inicial: " + saldo);
-        System.out.println("*******************************************");
-
+        System.out.println(mensagem);
 
         String menu = """
                 Operações
